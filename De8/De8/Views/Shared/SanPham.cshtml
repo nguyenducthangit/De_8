@@ -1,0 +1,21 @@
+﻿@model IEnumerable<De8.Models.Entities.SanPham>
+<div class="products-catagories-area clearfix" id="SanPham">
+    <div class="amado-pro-catagory clearfix">
+
+       @foreach (var item in Model)
+        {
+            <div class="single-products-catagory clearfix">
+                <a href="shop.html">
+                    <img src="~/Content/img/@item.AnhDaiDien" alt="">
+                    <!-- Hover Content -->
+                    <div class="hover-content">
+                        <div class="line"></div>
+                        <p>@item.DonGiaBanNhoNhat/p>
+                        <h4>@item.TenSanPham</h4>
+                    </div>
+                </a>
+            </div>
+
+        }
+    </div>
+</div>
